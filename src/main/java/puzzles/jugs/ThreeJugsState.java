@@ -61,7 +61,8 @@ public class ThreeJugsState implements TwoPhaseMoveState<Integer> {
      */
     @Override
     public boolean isLegalMove(TwoPhaseMove<Integer> move) {
-        return contents[move.from()] > 0
+        return move.from() != move.to()
+                && contents[move.from()] > 0
                 && contents[move.to()] < VOLUMES[move.to()];
     }
 
