@@ -54,7 +54,7 @@ public class DummyState implements TwoPhaseMoveState<Position> {
     public Status getStatus() {
         if (!isGameOver()) {
             return Status.IN_PROGRESS;
-        };
+        }
         return player == Player.PLAYER_2 ? Status.PLAYER_1_WINS : Status.PLAYER_2_WINS;
     }
 
