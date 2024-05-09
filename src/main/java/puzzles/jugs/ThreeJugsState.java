@@ -23,8 +23,8 @@ public class ThreeJugsState implements TwoPhaseMoveState<Integer> {
 
     static {
         // For performance reasons, all possible moves are generated in advance
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
                 MOVES.add(new TwoPhaseMove<>(i, j));
             }
         }

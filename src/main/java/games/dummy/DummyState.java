@@ -100,8 +100,8 @@ public class DummyState implements TwoPhaseMoveState<Position> {
     }
 
     private boolean hasEmptyNeighbor(Position p) {
-        for (int i = p.row() - 1; i <= p.row() + 1; i++) {
-            for (int j = p.col() - 1; j <= p.col() + 1; j++) {
+        for (var i = p.row() - 1; i <= p.row() + 1; i++) {
+            for (var j = p.col() - 1; j <= p.col() + 1; j++) {
                 if (i == p.row() && j == p.col()) {
                     continue;
                 }
@@ -133,8 +133,8 @@ public class DummyState implements TwoPhaseMoveState<Position> {
     @Override
     public String toString() {
         var sb = new StringBuilder();
-        for (int i = 0; i < BOARD_SIZE; i++) {
-            for (int j = 0; j < BOARD_SIZE; j++) {
+        for (var i = 0; i < BOARD_SIZE; i++) {
+            for (var j = 0; j < BOARD_SIZE; j++) {
                 sb.append(board[i][j] ? 'O' : '_').append(' ');
             }
             sb.append('\n');
