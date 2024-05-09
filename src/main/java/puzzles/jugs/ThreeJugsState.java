@@ -130,7 +130,6 @@ public class ThreeJugsState implements TwoPhaseMoveState<Integer> {
     public static void main(String[] args) {
         new BreadthFirstSearch<TwoPhaseMove<Integer>>()
                 .solveAndPrintSolution(new ThreeJugsState());
-
     }
 
 }
