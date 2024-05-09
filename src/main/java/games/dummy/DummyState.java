@@ -146,4 +146,5 @@ public class DummyState implements TwoPhaseMoveState<Position> {
         var state = new DummyState();
         System.out.println(state.hasEmptyNeighbor(new Position(0, 0)));
     }
+
 }
