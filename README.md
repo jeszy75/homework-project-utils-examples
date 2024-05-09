@@ -5,7 +5,7 @@ Examples to demonstrate how to use the [homework-project-utils](https://github.c
 
 ## Documentation
 
-* [Javadoc](https://inbpm0420l.github.io/homework-project-utils-examples/javadoc/)
+* [Javadoc](https://jeszy75.github.io/homework-project-utils-examples/)
 
 ## Building the Code
 
