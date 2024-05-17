@@ -18,7 +18,7 @@ public class DummyState implements TwoPhaseMoveState<Position> {
      */
     public static final int BOARD_SIZE = 5;
 
-    private boolean[][] board;
+    private final boolean[][] board;
 
     private Player player;
 
