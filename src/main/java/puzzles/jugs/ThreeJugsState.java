@@ -3,6 +3,7 @@ package puzzles.jugs;
 import puzzle.TwoPhaseMoveState;
 import puzzle.solver.BreadthFirstSearch;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -93,6 +94,19 @@ public class ThreeJugsState implements TwoPhaseMoveState<Integer> {
             }
         }
         return moves;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        return (o instanceof ThreeJugsState that) && Arrays.equals(contents, that.contents);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(contents);
     }
 
     @Override
